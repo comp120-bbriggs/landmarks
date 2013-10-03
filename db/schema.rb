@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20131001213444) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "landmarks", force: true do |t|
     t.float    "longitude"
     t.float    "latitude"
