@@ -1,7 +1,7 @@
 class LandmarksController < ApplicationController
 
 	def index
-		render text: "Hello World"
+		@landmarks = Landmark.all
 	end
 
 end
